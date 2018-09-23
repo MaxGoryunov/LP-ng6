@@ -1,0 +1,95 @@
+header {
+    width: 100%;
+    position: sticky;
+    top: -1px;
+    transition: 0.5s ease-in;
+    background: rgb(223, 236, 242);    
+}
+header.large {
+    padding: 0 0 25px;
+}
+header>div.info {
+    background: rgb(223, 236, 242);
+    width: 100%;
+    height: 25px;
+}
+header>div:first-of-type>div {
+    float: right;
+    margin-right: 20px;
+}
+header>div:first-of-type>div>figure {
+    float: left;
+    padding: 0;
+    margin-top: 2.5px;
+}
+header>div:first-of-type>div>figure:first-child {
+    width: 300px;
+}
+header>div:first-of-type>div>figure:last-child {
+    width: 200px;
+}
+header>div:first-of-type>div>figure>img {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    padding-top: 2px; 
+}
+header>div:first-of-type>div>figure>figcaption {
+    color: rgb(2, 68, 126);
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+header>div:first-of-type>div>figure:hover>figcaption {
+    color: rgb(6, 142, 202);
+}
+header>section {
+    width: 100%;
+    background: #fff;
+}
+header>section>span {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 0 45px 45px 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+header>section>span>div {
+    background: rgb(2, 68, 126);
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+    display: block;
+    float: right;
+}
+header>section>#container {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+}
+header>section>#container>a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    width: 125px;
+}
+header>section>#container>a:hover {
+    color: rgb(6, 142, 202);
+    border-bottom: 3px solid rgb(6, 142, 202);
+}
+
+
+

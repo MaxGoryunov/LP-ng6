@@ -1,0 +1,37 @@
+#skills {
+    height: 550px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 50px;    
+}
+#skills>figure {
+    width: 500px;
+    display: block;
+    clear: both;
+    padding: 20px;
+}
+#skills>figure:nth-child(1) {
+    margin-left: 125px;
+}
+#skills>figure:nth-child(2) {
+    margin-left: 250px;
+}
+#skills>figure:nth-child(3) {
+    margin-left: 375px;
+}
+#skills>figure:nth-child(4) {
+    margin-left: calc(1500px/3);
+}
+#skills>figure>div {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    border: 5px solid #fff;
+    margin-right: 20px;
+    float: left;
+}
+#skills>figure>figcaption {
+    padding-top: 15px;
+}
+
+

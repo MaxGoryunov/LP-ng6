@@ -2,4 +2,14 @@ main {
     padding-top: 0px;
     overflow: hidden;
 }
+main>section {
+    background-attachment: fixed;
+}
+main>section:nth-child(2) {
+    height: 650px;
+}
+main>section:nth-child(2)>section {
+    height: 650px;
+}
+
 

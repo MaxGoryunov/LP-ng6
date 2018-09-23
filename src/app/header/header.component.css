@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0px;
     transition: 0.5s ease-in;
     background: rgb(223, 236, 242);    

@@ -2,7 +2,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0px;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
     background: rgb(223, 236, 242);    
 }
 header.large {
@@ -41,7 +41,7 @@ header>div:first-of-type>div>figure>figcaption {
     padding: 0;
     margin-right: 25px;
     cursor: pointer;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
 }
 header>div:first-of-type>div>figure:hover>figcaption {
     color: rgb(6, 142, 202);

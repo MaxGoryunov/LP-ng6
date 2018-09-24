@@ -3,19 +3,19 @@ header {
     position: fixed;
     top: 0px;
     transition: 0.5s ease-out;
-    background: rgb(223, 236, 242);    
-}
-header.large {
-    padding: 0 0 25px;
+    background: rgb(223, 236, 242);
+    padding: 0 0 25px;   
 }
 header>div.info {
     background: rgb(223, 236, 242);
     width: 100%;
     height: 25px;
+    transition: 0.5s ease-out;
 }
 header>div:first-of-type>div {
     float: right;
     margin-right: 20px;
+    transition: 0.5s ease-out;
 }
 header>div:first-of-type>div>figure {
     float: left;
@@ -59,6 +59,7 @@ header>section>span {
     position: fixed;
     top: 0px;
     left: 0px;
+    transition: 0.5s ease-out;
 }
 header>section>span>div {
     background: rgb(2, 68, 126);
@@ -67,6 +68,7 @@ header>section>span>div {
     border-radius: 50px;
     display: block;
     float: right;
+    transition: 0.5s ease-out;
 }
 header>section>#container {
     display: flex;
@@ -90,6 +92,22 @@ header>section>#container>a:hover {
     color: rgb(6, 142, 202);
     border-bottom: 3px solid rgb(6, 142, 202);
 }
+header.large {
+    padding: 0 0 25px;
+}
+header.small {
+    padding: 0;
+    top: -25px;
+}
+header.small>section>span {
+    height: 0px;
+    width: 0;
+}
+header.small>section>span>div {
+    height: 0px;
+}
+
+
 
 
 

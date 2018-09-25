@@ -30,6 +30,21 @@
     margin-right: 20px;
     float: left;
 }
+#skills>figure>div>img {
+    width: 70px;
+    height: 70px;
+    margin: 20px 15px;
+}
+#skills>figure:nth-child(3)>div>img {
+    width: 92px;
+    height: 92px;
+    margin: 7px;
+}
+#skills>figure:nth-child(4)>div>img {
+    width: 90px;
+    height: 90px;
+    margin: 4.5px;
+}
 #skills>figure>figcaption {
     padding-top: 20px;
 }

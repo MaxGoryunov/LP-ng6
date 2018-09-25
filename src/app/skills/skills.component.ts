@@ -10,6 +10,13 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.addEventListener("scroll", function ():void {
+      if (document.documentElement.scrollTop>540) {
+        document.getElementById("2_background").style.backgroundAttachment="fixed";
+      } else {
+        document.getElementById("2_background").style.backgroundAttachment="scroll";
+      }
+    })
   }
 
 }

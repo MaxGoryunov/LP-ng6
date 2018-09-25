@@ -1,13 +1,13 @@
 <div class="feedback">
   <a id="callback"></a><h2>Контактная форма</h2>
-  <form id="contacts">
+  <form id="contacts" action="mailer.php" method="POST">
       <div>
           <div><label>Имя</label><input type="text" name="name" required="required"></div>
           <div><label>E-mail</label><input type="email" name="email"></div>
           <div><label>Телефон</label><input type="tel" name="phone" required="required"></div>
-          <div><label>Сообщение</label><textarea name="text"></textarea></div>
+          <div><label>Сообщение</label><textarea name="comment"></textarea></div>
           <p>
-            <button type="submit">Отправить сообщение!</button>
+            <button name="submit" type="submit">Отправить сообщение!</button>
           </p>
       </div>
   </form>

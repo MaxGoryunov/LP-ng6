@@ -35,4 +35,9 @@ div#general>div>div>p {
     font-size: 1.1em;
     color: #fff;
 }
+a#main_a {
+    position: absolute;
+    top: 0px;
+}
+
 

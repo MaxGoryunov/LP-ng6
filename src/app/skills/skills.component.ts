@@ -11,7 +11,7 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit() {
     document.addEventListener("scroll", function ():void {
-      if (document.documentElement.scrollTop>540) {
+      if (document.documentElement.scrollTop>593) {
         document.getElementById("2_background").style.backgroundAttachment="fixed";
       } else {
         document.getElementById("2_background").style.backgroundAttachment="scroll";

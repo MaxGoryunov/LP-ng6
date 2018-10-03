@@ -18,6 +18,21 @@ export class HeaderComponent implements OnInit {
         document.getElementById("header").classList.remove("small");
         document.getElementById("header").classList.add("large");
       }
-    })
+    });
+
+    let anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
+    
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        
+        const blockID = anchor.getAttribute('href')
+        
+        document.querySelector('' + blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    };
 
 }

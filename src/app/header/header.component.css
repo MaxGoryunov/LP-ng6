@@ -105,16 +105,17 @@ header.small {
     background: rgba(255, 255, 255, 0);
 }
 header.small>section {
-    width: 800px;
+    width: 70%;
 }
 header.small>section>span {
     height: 0px;
     width: 0;
+    margin-left: 25%;
     margin-top: 26.25px;
-    padding: 0;
+    padding: 0;    
 }
 header.small>section>span>div {
-    height: 0px;
+    height: 0;
 }
 
 

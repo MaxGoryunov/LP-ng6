@@ -49,12 +49,15 @@ header>div:first-of-type>div>figure:hover>figcaption {
 header>section {
     width: 100%;
     background: #fff;
+    transition: 0.5s ease-out;
+    margin: 0 auto;
 }
 header>section>span {
     display: block;
     background: #fff;
     padding: 10px;
     width: 200px;
+    height: 85px;
     border-radius: 0 45px 45px 0;
     position: fixed;
     top: 0px;
@@ -99,6 +102,10 @@ header.large {
 header.small {
     padding: 0;
     top: -25px;
+    background: rgba(255, 255, 255, 0);
+}
+header.small>section {
+    width: 800px;
 }
 header.small>section>span {
     height: 0px;

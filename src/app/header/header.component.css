@@ -94,6 +94,10 @@ header>section>#container>a {
     text-align: center;
     width: 125px;
 }
+header>section>#container>a.active {
+    color: rgb(6, 142, 202);
+    border-bottom: 3px solid rgb(6, 142, 202);
+}
 header>section>#container>a:hover {
     color: rgb(6, 142, 202);
     border-bottom: 3px solid rgb(6, 142, 202);

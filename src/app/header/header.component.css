@@ -4,7 +4,8 @@ header {
     top: 0px;
     transition: 0.5s ease-out;
     background: rgb(223, 236, 242);
-    padding: 0 0 25px;   
+    padding: 0 0 25px;
+    z-index: 5;
 }
 header>div.info {
     background: rgb(223, 236, 242);

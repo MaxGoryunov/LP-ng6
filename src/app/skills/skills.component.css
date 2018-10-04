@@ -9,6 +9,7 @@
     display: block;
     clear: both;
     padding: 20px;
+    z-index: 1;
 }
 #skills>figure:nth-child(1) {
     margin-left: 125px;

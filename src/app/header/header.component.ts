@@ -37,13 +37,13 @@ export class HeaderComponent implements OnInit {
 
     document.addEventListener("scroll", function ():void {
       let main = document.getElementById("a_main");
-      if (document.documentElement.scrollTop < 540) {
+      if (document.documentElement.scrollTop <= 540) {
         main.classList.add("active");
       } else {
         main.classList.remove("active");
       };
       let skills = document.getElementById("a_skills");
-      if (document.documentElement.scrollTop > 540 && document.documentElement.scrollTop < 1190) {
+      if (document.documentElement.scrollTop > 540 && document.documentElement.scrollTop <= 1190) {
         skills.classList.add("active");
       } else {
         skills.classList.remove("active");

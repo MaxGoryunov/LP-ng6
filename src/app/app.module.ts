@@ -8,6 +8,8 @@ import { GeneralComponent } from './general/general.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [

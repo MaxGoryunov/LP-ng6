@@ -14,8 +14,22 @@ div#general>img {
     width: 300px;
     height: auto;
     margin: 40px 30px 0;
+    transition-timing-function: ease-out;
+    animation: Appear 1s;
 }
-
+@keyframes Appear {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    };
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    };
+}
+div#general>div {
+    animation: Appear 1s;
+}
 div#general>div>h1 {
     padding-top: 120px;
     font-size: 2.5em;

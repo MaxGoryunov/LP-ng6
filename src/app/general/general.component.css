@@ -6,11 +6,11 @@ div#general {
     padding-top: 105px;
     
 }
-div#general>img {
+div#general>div:first-of-type>img {
     padding: 10px;
     float: left;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     width: 300px;
     height: auto;
     margin: 40px 30px 0;
@@ -27,25 +27,25 @@ div#general>img {
         opacity: 1;
     };
 }
-div#general>div {
+div#general>div:last-of-type {
     animation: Appear 1s;
 }
-div#general>div>h1 {
+div#general>div:last-of-type>h1 {
     padding-top: 120px;
     font-size: 2.5em;
     color: #fff;
 }
-div#general>div>h1>span {
+div#general>div:last-of-type>h1>span {
     display: block;
     margin-top: -10px;
     font-size: 1.25em;
 }
-div#general>div>h1+p {
+div#general>div:last-of-type>h1+p {
     color: #fff;
     font-style: italic;
     margin: 10px 0;
 }
-div#general>div>div>p {
+div#general>div:last-of-type>div>p {
     font-size: 1.1em;
     color: #fff;
 }

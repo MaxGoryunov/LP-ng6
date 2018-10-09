@@ -13,6 +13,7 @@ header>div.info {
     height: 25px;
     transition: 0.5s ease-out;
     margin: 0 auto;
+    opacity: 1;
 }
 header>div:first-of-type>div {
     float: right;
@@ -107,15 +108,17 @@ header.large {
 }
 header.small {
     padding: 0;
-    top: -25px;
+    top: -15px;
     background: rgba(255, 255, 255, 0);
 }
 header.small>div.info {
     width: 70%;
     background: rgba(255, 255, 255, 0);
+    opacity: 0;
 }
 header.small>section {
     width: 70%;
+    box-shadow: 0 5px 20px rgb(2, 34, 59);
 }
 header.small>section>span {
     height: 0px;

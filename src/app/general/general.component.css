@@ -19,7 +19,7 @@ div#general>div:first-of-type>img {
 }
 @keyframes Appear {
     from {
-        transform: translateY(30px);
+        transform: translateY(40px);
         opacity: 0;
     };
     to {

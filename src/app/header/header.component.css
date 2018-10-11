@@ -118,7 +118,7 @@ header.small>div.info {
 }
 header.small>section {
     width: 70%;
-    box-shadow: 0 5px 20px rgb(2, 34, 59);
+    box-shadow: 0 6px 12px rgb(2, 34, 59);
 }
 header.small>section>span {
     height: 0px;

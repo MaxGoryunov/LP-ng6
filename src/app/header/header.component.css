@@ -130,7 +130,64 @@ header.small>section>span {
 header.small>section>span>div {
     height: 0;
 }
-
+@media screen and (max-width: 650px) {
+    header {
+        padding: 0;
+    }
+    header>div.info {
+        height: 20px;
+    }
+    header>div:first-of-type>div {
+        margin-right: 10px;
+    }
+    header>div:first-of-type>div>figure {
+        margin-top: 2px;
+        float: left;
+    }
+    header>div:first-of-type>div>figure:first-child {
+        width: 200px;
+    }
+    header>div:first-of-type>div>figure:last-child {
+        width: 135px;
+    }
+    header>div:first-of-type>div>figure>img {
+        display: none;
+    }
+    header>div:first-of-type>div>figure>figcaption {
+        margin-right: 15px;
+        font-size: 0.9em;
+    }
+    header>section>span {
+        display: none;
+    }
+    header>section>#container {
+        width: 50%;
+    }
+    header>section>#container>a {
+        padding: 10px 15px;
+        border-bottom: 2px solid #fff;
+        width: 100px;
+    }
+    header>section>#container>a.active {
+        border-bottom: 2px solid rgb(6, 142, 202);
+    }
+    header>section>#container>a:hover {
+        border-bottom: 2px solid rgb(6, 142, 202);
+    }
+    header.large {
+        padding: 0;
+    }
+    header.small {
+        top: -20px;
+    }
+    header.small>div.info {
+        width: 100%;
+    }
+    header.small>section {
+        width: 100%;
+        box-shadow: 0 4px 8px rgb(2, 34, 59);
+    }
+}
 
 
 

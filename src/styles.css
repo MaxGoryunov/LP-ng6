@@ -12,4 +12,9 @@ body {
 a {
     transition: 0.5s ease-out;
 }
-
+@media screen and (max-width: 650px) {
+    body {
+        max-width: 415px;
+        font-size: 0.9em;
+    }
+}

@@ -6,55 +6,25 @@
 }
 #skills>figure {
     width: 500px;
+    height: 92px;
     display: block;
     clear: both;
-    padding: 20px;
+    padding: 5px;
+    padding-bottom: 20px;
     z-index: 1;
-    transition-timing-function: ease-out;
+    transition: 0.5s ease-out;
+    border: 4px solid transparent;
 }
-@keyframes Appear-Up {
-    from {
-        transform: translateY(40px);
-        opacity: 0;
-    };
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    };
-}
-@keyframes Disappear-Up {
-    from {
-        transform: translateY(0px);
-        opacity: 1;
-    };
-    to {
-        transform: translateY(-40px);
-        opacity: 0;
-    }
-}
-@keyframes Appear-Down {
-    from {
-        transform: translateY(-40px);
-        opacity: 0;
-    };
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    };
-}
-@keyframes Disappear-Down {
-    from {
-        transform: translateY(0px);
-        opacity: 1;
-    };
-    to {
-        transform: translateY(40px);
-        opacity: 0;
-    };
+#skills>figure:hover {
+    border: 4px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 65px;
+    transform: scale(1.1, 1.1);
 }
 #skills>figure:nth-child(1) {
     margin-left: 125px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 #skills>figure:nth-child(2) {
     margin-left: 250px;
@@ -109,5 +79,47 @@
 #skills>figure>figcaption {
     padding-top: 20px;
 }
+
+@keyframes Appear-Up {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    };
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    };
+}
+@keyframes Disappear-Up {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    };
+    to {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+}
+@keyframes Appear-Down {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    };
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    };
+}
+@keyframes Disappear-Down {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    };
+    to {
+        transform: translateY(40px);
+        opacity: 0;
+    };
+}
+
 
 

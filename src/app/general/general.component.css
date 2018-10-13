@@ -60,34 +60,20 @@ a#main_a {
         padding-left: 0;
         padding-top: 50px;    
     }
+    div#general>div:first-of-type {
+        margin: 0;
+        padding: 0 10%;
+        width: 80%;
+    }
     div#general>div:first-of-type>img {
-        padding: 10px;
-        float: left;
-        background: #fff;
-        border-radius: 15px;
-        width: 300px;
-        height: auto;
-        margin: 40px 30px 0;
-        transition-timing-function: ease-out;
-        animation: Appear 1s;
-    }
-    @keyframes Appear {
-        from {
-            transform: translateY(40px);
-            opacity: 0;
-        };
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        };
-    }
-    div#general>div:last-of-type {
-        animation: Appear 1s;
+        float: none;
+        margin: 20px 0 0;
+        width: calc(100% - 20px);
     }
     div#general>div:last-of-type>h1 {
-        padding-top: 120px;
-        font-size: 2.5em;
-        color: #fff;
+        padding-top: 0px;
+        padding-left: 10%;
+        font-size: 2em;
     }
     div#general>div:last-of-type>h1>span {
         display: block;
@@ -95,13 +81,13 @@ a#main_a {
         font-size: 1.25em;
     }
     div#general>div:last-of-type>h1+p {
-        color: #fff;
-        font-style: italic;
-        margin: 10px 0;
+        padding: 0 10%;        
+        margin: 5px 0;
+        font-size: 1.1em;
     }
     div#general>div:last-of-type>div>p {
-        font-size: 1.1em;
-        color: #fff;
+        font-size: 1.2em;
+        padding-left: 10%;        
     }
     a#main_a {
         position: absolute;

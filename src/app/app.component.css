@@ -11,5 +11,12 @@ main>section:nth-child(2) {
 main>section:nth-child(2)>section {
     height: 650px;
 }
-
+@media screen and (max-width: 480px) {
+    main>section:first-child {
+        height: 100vh;
+    }
+    main>section:first-child>section {
+        height: 100vh;
+    }
+}
 

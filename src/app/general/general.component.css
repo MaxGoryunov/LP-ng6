@@ -55,10 +55,10 @@ a#main_a {
 }
 @media screen and (max-width: 480px) {
     div#general {
-        height: 600px;
+        height: calc(50px);
         width: 100%;
         padding-left: 0;
-        padding-top: 50px;    
+        padding-top: 20%;    
     }
     div#general>div:first-of-type {
         margin: 0;
@@ -67,7 +67,8 @@ a#main_a {
     }
     div#general>div:first-of-type>img {
         float: none;
-        margin: 20px 0 0;
+        margin: 0 0;
+        margin-top: calc((85vh - 552px)/2);
         width: calc(100% - 20px);
     }
     div#general>div:last-of-type>h1 {
@@ -77,11 +78,11 @@ a#main_a {
     div#general>div:last-of-type>h1>span {
         display: block;
         margin-top: -10px;
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
     div#general>div:last-of-type>h1+p {
         padding: 0 10%;        
-        margin: 5px 0;
+        margin: 2% 0;
         font-size: 1.1em;
     }
     div#general>div:last-of-type>div>p {

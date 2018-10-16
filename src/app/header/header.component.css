@@ -119,6 +119,7 @@ header.small>div.info {
 header.small>section {
     width: 70%;
     box-shadow: 0 6px 12px rgb(2, 34, 59);
+    border-radius: 30px;
 }
 header.small>section>span {
     height: 0px;
@@ -184,7 +185,7 @@ header.small>section>span>div {
         width: 100%;
     }
     header.small>section {
-        width: 100%;
+        width: 95%;
         box-shadow: 0 4px 8px rgb(2, 34, 59);
     }
 }

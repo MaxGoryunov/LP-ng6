@@ -14,6 +14,7 @@
     z-index: 1;
     transition: 0.5s ease-out;
     border: 4px solid transparent;
+    cursor: pointer;
 }
 #skills>figure:hover {
     border: 4px solid #fff;

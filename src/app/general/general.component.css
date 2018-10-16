@@ -71,9 +71,8 @@ a#main_a {
         width: calc(100% - 20px);
     }
     div#general>div:last-of-type>h1 {
-        padding-top: 0px;
-        padding-left: 10%;
-        font-size: 2em;
+        padding: 0 10%;
+        font-size: 1.9em;
     }
     div#general>div:last-of-type>h1>span {
         display: block;

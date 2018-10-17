@@ -67,7 +67,7 @@ a#main_a {
     }
     div#general>div:first-of-type>img {
         float: none;
-        margin: 0 0;
+        margin: 0;
         margin-top: calc((85vh - 552px)/2);
         width: calc(100% - 20px);
     }
@@ -76,10 +76,8 @@ a#main_a {
         font-size: 1.9em;
     }
     div#general>div:last-of-type>h1>span {
-        display: block;
-        margin-top: -10px;
         font-size: 1.2em;
-    }
+    }  
     div#general>div:last-of-type>h1+p {
         padding: 0 10%;        
         margin: 2% 0;
@@ -88,10 +86,6 @@ a#main_a {
     div#general>div:last-of-type>div>p {
         font-size: 1.2em;
         padding-left: 10%;        
-    }
-    a#main_a {
-        position: absolute;
-        top: 0px;
     }
 }
 

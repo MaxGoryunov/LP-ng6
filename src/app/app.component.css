@@ -18,5 +18,11 @@ main>section:nth-child(2)>section {
     main>section:first-child>section {
         height: 100vh;
     }
+    main>section:nth-child(2) {
+        height: 100vh;
+    }
+    main>section:nth-child(2)>section {
+        height: 100vh;
+    }
 }
 

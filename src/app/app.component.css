@@ -2,27 +2,35 @@ main {
     padding-top: 0px;
     overflow: hidden;
 }
+main>section {
+    height: 100vh;
+}
+main>section>section {
+    height: 100vh;
+}
 main>section:first-child {
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
 }
 main>section:nth-child(2) {
-    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
 }
-main>section:nth-child(2)>section {
-    height: 650px;
-}
-/*@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     main>section:first-child {
-        height: 100vh;
+        background-size: 1400px 650px;
     }
     main>section:first-child>section {
-        height: 100vh;
+        background-size: 1400px 650px;
     }
     main>section:nth-child(2) {
-        height: 100vh;
+        background-size: 1400px 650px;
     }
     main>section:nth-child(2)>section {
-        height: 100vh;
+        background-size: 1400px 650px;
     }
-}*/
+}
 

@@ -21,16 +21,16 @@ main>section:nth-child(2) {
 }
 @media screen and (max-width: 480px) {
     main>section:first-child {
-        background-size: 1400px 650px;
+        background-size: 221.5vh 100vh;
     }
     main>section:first-child>section {
-        background-size: 1400px 650px;
+        background-size: 221.5vh 100vh;
     }
     main>section:nth-child(2) {
-        background-size: 1400px 650px;
+        background-size: 221.5vh 100vh;
     }
     main>section:nth-child(2)>section {
-        background-size: 1400px 650px;
+        background-size: 221.5vh 100vh;
     }
 }
 

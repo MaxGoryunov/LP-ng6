@@ -15,6 +15,14 @@ footer>p {
 footer>p>span {
     animation: fade 1.5s linear infinite;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 480px) {
+    footer>p {
+        width: 200px;
+    }
+}
+>>>>>>> develop
 @keyframes fade {
     0% {
         color: rgba(255, 255, 255, 0.4);

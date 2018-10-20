@@ -22,7 +22,7 @@ export class SkillsComponent implements OnInit {
       let scrollTop = document.documentElement.scrollTop;
       let s_figures:any = [].slice.call(document.getElementsByClassName("s_figure"));
       for (let s_figure of s_figures) {
-        if (scrollTop >= 150 + s_figures.indexOf(s_figure)*132) {
+        if (scrollTop >= 155 + s_figures.indexOf(s_figure)*132) {
           s_figure.style.animation = "Appear-Up 1s";
           s_figure.style.opacity = "1";
         } else {

@@ -6,6 +6,7 @@
 body {
     background: #fff;
     font-family: 'Montserrat', sans-serif;
+    min-width: 1150px;
     height: 100vh;
     color: #fff;
 }
@@ -14,7 +15,7 @@ a {
 }
 @media screen and (max-width: 480px) {
     body {
-        max-width: 415px;
+        min-width: 360px;
         font-size: 0.9em;
     }
 }

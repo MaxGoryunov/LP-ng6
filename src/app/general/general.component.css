@@ -55,57 +55,37 @@ a#main_a {
 }
 @media screen and (max-width: 480px) {
     div#general {
-        height: 600px;
+        height: calc(50px);
         width: 100%;
         padding-left: 0;
-        padding-top: 50px;    
+        padding-top: 20%;    
+    }
+    div#general>div:first-of-type {
+        margin: 0;
+        padding: 0 10%;
+        width: 80%;
     }
     div#general>div:first-of-type>img {
-        padding: 10px;
-        float: left;
-        background: #fff;
-        border-radius: 15px;
-        width: 300px;
-        height: auto;
-        margin: 40px 30px 0;
-        transition-timing-function: ease-out;
-        animation: Appear 1s;
-    }
-    @keyframes Appear {
-        from {
-            transform: translateY(40px);
-            opacity: 0;
-        };
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        };
-    }
-    div#general>div:last-of-type {
-        animation: Appear 1s;
+        float: none;
+        margin: 0;
+        margin-top: calc((85vh - 552px)/2);
+        width: calc(100% - 20px);
     }
     div#general>div:last-of-type>h1 {
-        padding-top: 120px;
-        font-size: 2.5em;
-        color: #fff;
+        padding: 0 10%;
+        font-size: 1.9em;
     }
     div#general>div:last-of-type>h1>span {
-        display: block;
-        margin-top: -10px;
-        font-size: 1.25em;
-    }
+        font-size: 1.2em;
+    }  
     div#general>div:last-of-type>h1+p {
-        color: #fff;
-        font-style: italic;
-        margin: 10px 0;
+        padding: 0 10%;        
+        margin: 2% 0;
+        font-size: 1.1em;
     }
     div#general>div:last-of-type>div>p {
-        font-size: 1.1em;
-        color: #fff;
-    }
-    a#main_a {
-        position: absolute;
-        top: 0px;
+        font-size: 1.2em;
+        padding-left: 10%;        
     }
 }
 

@@ -111,7 +111,7 @@
         border: none;
         background: rgb(6, 142, 202);
         cursor: pointer;
-        transition: 0.5s ease-out;
+        transition: 0.75s ease-out;
     }
     #feedback>#contacts>div>p>button:hover {
         box-shadow: 0 5px 5px rgb(2, 52, 94);

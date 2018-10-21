@@ -6,7 +6,7 @@
 }
 #feedback>h2 {
     font-size: 2.5em;
-    padding: 70px 20px 10px;
+    padding: 70px 20px 5px;
     text-align: center;
 }
 #feedback>#contacts {
@@ -42,13 +42,9 @@
     background: #fff;
     color: rgb(6, 142, 202);
 }
-#feedback>#contacts>div>div {
-    height: auto;
-    margin-bottom: 10px;
-    clear: both;
-}
 #feedback>#contacts>div>div:last-of-type {
     margin-bottom: 5px;
+    width: 100%;
 }
 #feedback>#contacts>div>div>label {
     width: 100px;
@@ -61,23 +57,56 @@
 #feedback>#contacts>div>div>input {
     padding: 7px 12.5px;
     height: 19px;
-    border: 1px solid rgb(6, 142, 202);
+    border: 2px solid rgb(2, 68, 126);
     width: 194px;
     color: #111;
-    border-radius: 17.5px;
+    border-radius: 18.5px;
 }
 #feedback>#contacts>div>div>input:focus {
-    border: 1px solid rgb(6, 142, 202);
-    border-radius: 17.5px;
+    border: 2px solid rgb(54, 165, 250);
+}
+#feedback>#contacts>div>div {
+    height: auto;
+    margin-bottom: 5px;
+    clear: both;
+    width: 100%;
+}
+#feedback>#contacts>div>div img {
+    width: 37px;
+    height: 37px;
+    float: right;
+    transition: 0.5s ease-out;
+}
+#feedback>#contacts>div>div>img:first-of-type {
+    transform: translateX(-233px);
+    opacity: 0;
+}
+#feedback>#contacts>div>div>figure {
+    float: right;
+    width: 270px;
+    transition: 0.5s ease-out;
+    opacity: 0;
+    transform: translateX(42px);
+}
+#feedback>#contacts>div>div>figure>figcaption {
+    font-size: 0.95em;
+    margin: 10px 0 0 47px;
+    color: #EB5027;    
+}
+#feedback>#contacts>div>div>figure>img {
+    float: left;
 }
 #feedback>#contacts>div>div>textarea {
     padding: 7px 12.5px;
-    border: 1px solid rgb(6, 142, 202);
+    border: 2px solid rgb(2, 68, 126);
     width: 505px;
     height: 250px;
     color: #111;
-    border-radius: 17.5px;
+    border-radius: 18.5px;
     font-family: 'Montserrat', sans-serif;
+}
+#feedback>#contacts>div>div>textarea:focus {
+    border: 2px solid rgb(54, 165, 250);
 }
 @media screen and (max-width: 480px) {
     #feedback>h2 {

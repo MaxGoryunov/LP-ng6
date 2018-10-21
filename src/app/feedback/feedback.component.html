@@ -1,12 +1,45 @@
 <a id="callback_a"></a>
 <div id="feedback">
   <h2>Контактная форма</h2>
-  <form id="contacts" action="mailer.php" method="POST">
+  <form id="contacts" action="mailer.php" method="POST" #userForm = "ngForm">
       <div>
-          <div><label>Имя</label><input type="text" name="name" required="required"></div>
-          <div><label>E-mail</label><input type="email" name="email"></div>
-          <div><label>Телефон</label><input type="tel" name="phone" required="required"></div>
-          <div><label>Сообщение</label><textarea name="comment"></textarea></div>
+          <div>
+            <label>Имя</label>
+            <input type="text" name="name" required="required" id="name">
+            <img src="assets/checked.png" alt="" class="checked">
+            <figure class="canceled">
+              <img src="assets/cancel.png" alt="" >
+              <figcaption>
+                Введите более 1 символа
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <label>E-mail</label>
+            <input type="email" name="email" required="required" id="email" >
+            <img src="assets/checked.png" alt="" class="checked">
+            <figure class="canceled">
+              <img src="assets/cancel.png" alt="" >
+              <figcaption>
+                Неправильный формат почты
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <label>Телефон</label>
+            <input type="tel" name="phone" required="required" id="phone">
+            <img src="assets/checked.png" alt="" class="checked">
+            <figure class="canceled">
+              <img src="assets/cancel.png" alt="" >
+              <figcaption>
+                Неправильный формат номера
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <label>Сообщение</label>
+            <textarea name="comment" ></textarea>
+          </div>
           <p>
             <button name="submit" type="submit">Отправить сообщение!</button>
           </p>

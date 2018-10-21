@@ -6,10 +6,44 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback.component.css']
 })
 export class FeedbackComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("phone");
+    let checked = [].slice.call(document.getElementsByClassName("checked"));
+    let canceled = [].slice.call(document.getElementsByClassName("canceled"));
+    name.addEventListener("change", ():void => {
+      if (name.value.length > 1) {
+        checked[0].style.opacity = "1";
+        checked[0].style.transform = "translateX(-270px)";    
+        canceled[0].style.opacity = "0";
+        canceled[0].style.transform = "translateX(42px)";
+      } else {
+        checked[0].style.opacity = "0";
+        checked[0].style.transform = "translateX(-233px)";
+        canceled[0].style.opacity = "1";
+        canceled[0].style.transform = "translateX(0px)";
+      }
+    })
+    //email.addEventListener("change", ():void => {
+      //if (email.value = "")
+    //})
+    phone.addEventListener("change", ():void => {
+      if (phone.value.length > 10) {
+        checked[2].style.opacity = "1";
+        checked[2].style.transform = "translateX(-37px)";    
+        canceled[2].style.opacity = "0";
+        canceled[2].style.transform = "translateX(42px)";   
+      } else {
+        checked[2].style.opacity = "0";
+        checked[2].style.transform = "translateX(5px)";
+        canceled[2].style.opacity = "1";
+        canceled[2].style.transform = "translateX(0px)";
+      }
+    })
+  }
   }
 
 }

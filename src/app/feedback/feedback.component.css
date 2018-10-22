@@ -90,6 +90,7 @@
 }
 #feedback>#contacts>div>div>figure>figcaption {
     font-size: 0.95em;
+    font-weight: bold;
     margin: 10px 0 0 47px;
     color: #EB5027;    
 }

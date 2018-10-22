@@ -5,7 +5,7 @@
       <div>
           <div>
             <label>Имя</label>
-            <input type="text" name="name" required="required" id="name">
+            <input type="text" name="name" required="required" id="name" class="param" ngModel>
             <img src="assets/checked.png" alt="" class="checked">
             <figure class="canceled">
               <img src="assets/cancel.png" alt="" >
@@ -16,7 +16,7 @@
           </div>
           <div>
             <label>E-mail</label>
-            <input type="email" name="email" required="required" id="email" >
+            <input type="email" name="email" required="required" id="email" class="param" ngModel>
             <img src="assets/checked.png" alt="" class="checked">
             <figure class="canceled">
               <img src="assets/cancel.png" alt="" >
@@ -27,12 +27,12 @@
           </div>
           <div>
             <label>Телефон</label>
-            <input type="tel" name="phone" required="required" id="phone">
+            <input type="tel" name="phone" required="required" id="phone" class="param" ngModel>
             <img src="assets/checked.png" alt="" class="checked">
             <figure class="canceled">
               <img src="assets/cancel.png" alt="" >
-              <figcaption>
-                Неправильный формат номера
+              <figcaption id="caption">
+                Введите более 10 символов
               </figcaption>
             </figure>
           </div>

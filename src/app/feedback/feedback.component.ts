@@ -48,7 +48,7 @@ export class FeedbackComponent implements OnInit {
       }
     })
     phone.addEventListener("change", ():void => {
-      if (phone.value.length > 11) {
+      if (phone.value.length > 10) {
         checked[2].style.opacity = "1";
         checked[2].style.transform = "translateX(-270px)";    
         canceled[2].style.opacity = "0";

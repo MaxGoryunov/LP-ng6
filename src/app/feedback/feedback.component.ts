@@ -15,7 +15,6 @@ export class FeedbackComponent implements OnInit {
     let checked: Array<HTMLElement> = [].slice.call(document.getElementsByClassName("checked"));
     let canceled: Array<HTMLElement> = [].slice.call(document.getElementsByClassName("canceled"));
     let caption:any = document.getElementById("caption");
-    let re1 = new RegExp("/\S+@\S+\.\S+/");
     name.addEventListener("change", ():void => {
       if (name.value.length > 1) {
         checked[0].style.opacity = "1";
@@ -48,7 +47,11 @@ export class FeedbackComponent implements OnInit {
       }
     })
     phone.addEventListener("change", ():void => {
-      if (phone.value.length > 10) {
+      function validatePhone(phone) {
+        let re2 = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+        return re2.test(phone);
+      }
+      if (validatePhone(phone.value)) {
         checked[2].style.opacity = "1";
         checked[2].style.transform = "translateX(-270px)";    
         canceled[2].style.opacity = "0";

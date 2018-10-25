@@ -23,6 +23,12 @@ export class GeneralComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let img = document.getElementById("fadeImg");
+    let text = document.getElementById("fadeText");
+    document.addEventListener("scroll", ():void => {
+      img.style.transform = "translateX(" +(-40 + document.documentElement.scrollTop/10) + "px";
+      text.style.transform = "translateX(" + (40 - document.documentElement.scrollTop/10) + "px";      
+    })
   }
 
 }

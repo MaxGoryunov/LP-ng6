@@ -6,6 +6,26 @@ div#general {
     padding-top: 105px;
     
 }
+@keyframes fadeImg {
+    from {
+        opacity: 0;
+        transform:translateX(-40px) translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform:translateX(-40px) translateY(0px);
+    }
+}
+@keyframes fadeText {
+    from {
+        opacity: 0;
+        transform:translateX(40px) translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform:translateX(40px) translateY(0px);
+    }
+}
 div#general>div:first-of-type>img {
     padding: 10px;
     float: left;
@@ -14,13 +34,15 @@ div#general>div:first-of-type>img {
     width: 300px;
     height: auto;
     margin: 40px 30px 0;
-    transition: 0.5s ease-out;
+    transition: 0.75s ease-out;
     transform: translateX(-40px);
+    animation: fadeImg 0.75s ease-out;
 }
 div#general>div:last-of-type {
     transform: translateX(40px);
-    transition: 0.5s ease-out;
+    transition: 0.75s ease-out;
     margin-top: 160px;
+    animation: fadeText 0.75s ease-out;    
     
 }
 div#general>div:last-of-type>h1 {

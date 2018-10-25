@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
         });
       });
     };
-
+    
     document.addEventListener("scroll", function ():void {
       let main = document.getElementById("a_main");
       if (document.documentElement.scrollTop <= 540) {

@@ -21,6 +21,7 @@ export class SkillsComponent implements OnInit {
     document.addEventListener("scroll", ():void => {
       let scrollTop = document.documentElement.scrollTop;
       let s_figures:any = [].slice.call(document.getElementsByClassName("s_figure"));
+      s_figures[0].style.hover.transform = "scale()";
       for (let s_figure of s_figures) {
         if (scrollTop < 155 + s_figures.indexOf(s_figure)*132) {
           s_figure.style.transform = "translateY(40px)";
@@ -34,6 +35,7 @@ export class SkillsComponent implements OnInit {
           s_figure.style.transform = "translateY(-40px)";
           s_figure.style.opacity = "0"; 
         }
+        s_figure.style.hover.transform = "scale()";
         /*if (scrollTop < 140 + s_figures.indexOf(s_figure)*132) {
           s_figure.style.opacity = "1";
           s_figure.style.animation = "Disappear-Down 1s";

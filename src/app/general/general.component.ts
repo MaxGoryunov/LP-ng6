@@ -25,9 +25,25 @@ export class GeneralComponent implements OnInit {
   ngOnInit() {
     let img = document.getElementById("fadeImg");
     let text = document.getElementById("fadeText");
+    let blockHeight = window.innerHeight + 50;
+    let topScroll = document.documentElement.scrollTop;
     document.addEventListener("scroll", ():void => {
-      img.style.transform = "translateX(" +(-40 + document.documentElement.scrollTop/10) + "px";
-      text.style.transform = "translateX(" + (40 - document.documentElement.scrollTop/10) + "px";      
+      img.style.transform = "translateX(" + ( - 70*document.documentElement.scrollTop/blockHeight) + "px)";
+      text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)";
+      if (document.documentElement.scrollTop >= (window.innerHeight + 50)/2) {
+        text.style.opacity = "0";
+        text.style.transform =  "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)" + "translateY(-40px)";
+      } else {
+        text.style.opacity = "1";
+        text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)" + "translateY(0px)";        
+      }
+      if (document.documentElement.scrollTop >= (window.innerHeight + 50)/1.5) {
+        img.style.opacity = "0";
+        img.style.transform = "translateX(" +( - 70*document.documentElement.scrollTop/blockHeight) + "px)" + "translateY(-40px)";
+      } else {
+        img.style.opacity = "1";
+        img.style.transform = "translateX(" +( - 70*document.documentElement.scrollTop/blockHeight) + "px)" + "translateY(0px)";
+      }
     })
   }
 

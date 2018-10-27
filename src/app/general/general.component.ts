@@ -25,7 +25,7 @@ export class GeneralComponent implements OnInit {
   ngOnInit() {
     let img = document.getElementById("fadeImg");
     let text = document.getElementById("fadeText");
-    let blockHeight = window.innerHeight + 50;
+    let blockHeight = window.innerHeight;
     let topScroll = document.documentElement.scrollTop;
     document.addEventListener("scroll", ():void => {
       img.style.transform = "translateX(" + ( - 70*document.documentElement.scrollTop/blockHeight) + "px)";

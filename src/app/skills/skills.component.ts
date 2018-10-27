@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { forEach } from '@angular/router/src/utils/collection';
-import { style } from '@angular/animations/src/animation_metadata';
+import { style, transition } from '@angular/animations/src/animation_metadata';
 
 @Component({
   selector: 'app-skills',
@@ -13,7 +13,9 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit() {
     document.addEventListener("scroll", function ():void {
-      if (document.documentElement.scrollTop>593) {
+      let blockHeight = window.innerHeight;
+      let scrollTop = document.documentElement.scrollTop;
+      if (scrollTop > blockHeight) {
         document.getElementById("2_background").style.backgroundAttachment="fixed";
       } else {
         document.getElementById("2_background").style.backgroundAttachment="scroll";
@@ -21,17 +23,18 @@ export class SkillsComponent implements OnInit {
     })
     document.addEventListener("scroll", ():void => {
       let scrollTop = document.documentElement.scrollTop;
+      let blockHeight = window.innerHeight;      
       let s_figures:any = [].slice.call(document.getElementsByClassName("s_figure"));
       for (let s_figure of s_figures) {
-        if (scrollTop < 155 + s_figures.indexOf(s_figure)*132) {
+        if (scrollTop < blockHeight/4 + s_figures.indexOf(s_figure)*125) {
           s_figure.style.transform = "translateY(40px)";
           s_figure.style.opacity = "0";
         };
-        if (scrollTop >= 155 + s_figures.indexOf(s_figure)*132) {
+        if (scrollTop >= blockHeight/4 + s_figures.indexOf(s_figure)*125) {
           s_figure.style.transform = "translateY(0px)";
           s_figure.style.opacity = "1";
         };
-        if (scrollTop >= 655 + s_figures.indexOf(s_figure)*132) {
+        if (scrollTop >= blockHeight*1.1 + s_figures.indexOf(s_figure)*125) {
           s_figure.style.transform = "translateY(-40px)";
           s_figure.style.opacity = "0"; 
         }

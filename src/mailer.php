@@ -1,7 +1,7 @@
 <?php 
 if(isset($_POST['submit'])) { 
 $to = "maximthehedgehog@yandex.com"; 
-$subject = "Контактная форма!"; 
+$subject = "Контактная форма"; 
  
 $name_field = filter_var($_POST['name'], FILTER_SANITIZE_STRING); 
 $email_field = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);

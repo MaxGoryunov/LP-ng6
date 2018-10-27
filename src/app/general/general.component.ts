@@ -32,17 +32,17 @@ export class GeneralComponent implements OnInit {
       text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)";
       if (document.documentElement.scrollTop >= (window.innerHeight + 50)/2) {
         text.style.opacity = "0";
-        text.style.transform =  "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)" + "translateY(-40px)";
+        text.style.transform =  "translateX("+ (40 + 70*document.documentElement.scrollTop/blockHeight) + "px)";
       } else {
         text.style.opacity = "1";
-        text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)" + "translateY(0px)";        
+        text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)";        
       }
       if (document.documentElement.scrollTop >= (window.innerHeight + 50)/1.5) {
         img.style.opacity = "0";
-        img.style.transform = "translateX(" +( - 70*document.documentElement.scrollTop/blockHeight) + "px)" + "translateY(-40px)";
+        img.style.transform = "translateX(" +( -40 - 70*document.documentElement.scrollTop/blockHeight) + "px)";
       } else {
         img.style.opacity = "1";
-        img.style.transform = "translateX(" +( - 70*document.documentElement.scrollTop/blockHeight) + "px)" + "translateY(0px)";
+        img.style.transform = "translateX(" +( - 70*document.documentElement.scrollTop/blockHeight) + "px)";
       }
     })
   }

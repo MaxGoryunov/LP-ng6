@@ -1,7 +1,7 @@
 <a id="callback_a"></a>
 <div id="feedback">
   <h2>Контактная форма</h2>
-  <form id="contacts" action="mailer.php" method="get" #userForm = "ngForm">
+  <form id="contacts" action="mailer.php" method="post" #userForm = "ngForm">
       <div>
           <div>
             <label>Имя</label>
@@ -16,7 +16,7 @@
           </div>
           <div>
             <label>E-mail</label>
-            <input type="email" name="email" required="required" id="email" class="param" ngModel>
+            <input type="email" name="mail" required="required" id="email" class="param" ngModel>
             <img src="assets/checked.png" alt="" class="checked">
             <figure class="canceled">
               <img src="assets/cancel.png" alt="" >
@@ -32,19 +32,20 @@
             <figure class="canceled">
               <img src="assets/cancel.png" alt="" >
               <figcaption id="caption">
-                Введите более 10 символов
+                Неправильный формат номера
               </figcaption>
             </figure>
           </div>
           <div>
             <label>Сообщение</label>
-            <textarea name="comment" ></textarea>
+            <textarea name="message" ></textarea>
           </div>
           <p>
-            <button name="submit" type="submit">Отправить сообщение!</button>
+            <button name="submit" type="submit" id="btn">Отправить сообщение!</button>
           </p>
       </div>
   </form>
+  <input type="text" name="subject" value="Предложение по работе" style="display: none;">
 </div>
 
 

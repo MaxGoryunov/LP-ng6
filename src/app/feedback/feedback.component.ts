@@ -65,7 +65,7 @@ export class FeedbackComponent implements OnInit {
     document.addEventListener("scroll", ():void => {
       let h2 = document.getElementById("h2");
       let contacts = document.getElementById("contacts");
-      if (document.documentElement.scrollTop > blockHeight*1.25) {
+      if (document.documentElement.scrollTop > blockHeight*1.3) {
         h2.style.marginTop = "0";
         h2.style.opacity = "1";
         contacts.style.opacity = "1";

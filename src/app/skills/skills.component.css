@@ -15,13 +15,14 @@
     transition: 0.5s ease-out;
     border: 4px solid transparent;
     cursor: pointer;
+    z-index: 5;
 }
 #skills>figure:hover {
     border: 4px solid #fff;
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-radius: 65px;
-    transform: scale(1.15, 1.15);
+    transform: scale(1.1, 1.1);
 }
 #skills>figure:nth-child(1) {
     margin-left: 125px;
@@ -44,27 +45,45 @@
     margin-right: 20px;
     float: left;
     transform-origin: center center;
-    transform: rotate(-45deg);    
+    transform: rotate(-45deg);
+    transition: 0.75s ease-out;
 }
 #skills>figure:nth-child(1)>div {
-    border-bottom-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0);
 }
 #skills>figure:nth-child(2)>div {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
 }
 #skills>figure:nth-child(3)>div {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
 }
 #skills>figure:nth-child(4)>div {
-    border-top-color: transparent;
+    border-top-color: rgba(255, 255, 255, 0);
 }
+
+#skills>figure:nth-child(1):hover>div {
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+#skills>figure:nth-child(2):hover>div {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+#skills>figure:nth-child(3):hover>div {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+#skills>figure:nth-child(4):hover>div {
+    border-top-color: rgba(255, 255, 255, 1);
+}
+
 #skills>figure>div>img {
     width: 70px;
     height: 70px;
     margin: 17.5px 12.5px;
     transform-origin: center center;
+    transition: 0.75s ease-out;
     transform: rotate(45deg);
 }
 #skills>figure:nth-child(3)>div>img {
@@ -80,7 +99,6 @@
 #skills>figure>figcaption {
     padding-top: 20px;
 }
-
 @keyframes Appear-Up {
     from {
         transform: translateY(40px);

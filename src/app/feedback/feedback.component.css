@@ -104,6 +104,9 @@
 #feedback>#contacts>div>div:nth-child(2)>figure>figcaption {
     margin-top: 2px;
 }
+#feedback>#contacts>div>div:nth-child(3)>figure>figcaption {
+    margin-top: 2px;
+}
 #feedback>#contacts>div>div>figure>img {
     float: left;
 }

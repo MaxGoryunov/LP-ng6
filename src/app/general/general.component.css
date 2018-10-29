@@ -25,6 +25,9 @@ div#general {
         transform:translateX(0px);
     }
 }
+div#general>div:first-of-type {
+    float: left;
+}
 div#general>div:first-of-type>img {
     padding: 10px;
     float: left;
@@ -43,12 +46,12 @@ div#general>div:last-of-type {
     
 }
 div#general>div {
-    width: 75%;
+    /*width: 75%;*/
     height: 430px;
     margin: 0 auto;
     margin-top: calc((100vh - 600px)/2);
 }
-div#general>div>div:last-of-type>h1 {
+div#general>div div#fadeText>h1 {
     padding-top: 120px;
     font-size: 2.5em;
     color: #fff;

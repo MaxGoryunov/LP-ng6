@@ -30,7 +30,7 @@ div#general>div:first-of-type {
 }
 div#general>div:first-of-type>img {
     padding: 10px;
-    float: left;
+    float: right;
     background: #fff;
     border-radius: 15px;
     width: 300px;
@@ -46,27 +46,27 @@ div#general>div:last-of-type {
     
 }
 div#general>div {
-    /*width: 75%;*/
+    width: 50%;
     height: 430px;
     margin: 0 auto;
     margin-top: calc((100vh - 600px)/2);
 }
-div#general>div div#fadeText>h1 {
-    padding-top: 120px;
+div#general>div:last-of-type>h1 {
+    padding-top: 0px;
     font-size: 2.5em;
     color: #fff;
 }
-div#general>div>div:last-of-type>h1>span {
+div#general>div:last-of-type>h1>span {
     display: block;
     margin-top: -10px;
     font-size: 1.25em;
 }
-div#general>div>div:last-of-type>h1+p {
+div#general>div:last-of-type>h1+p {
     color: #fff;
     font-style: italic;
     margin: 10px 0;
 }
-div#general>div>div:last-of-type>div>p {
+div#general>div:last-of-type>div>p {
     font-size: 1.1em;
     color: #fff;
 }

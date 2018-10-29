@@ -32,14 +32,14 @@ export class GeneralComponent implements OnInit {
       text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)";
       if (document.documentElement.scrollTop >= (window.innerHeight + 50)/2.2) {
         text.style.opacity = "0";
-        text.style.transform =  "translateX("+ (40 + 70*document.documentElement.scrollTop/blockHeight) + "px)";
+        text.style.transform =  "translateX(100px)";
       } else {
         text.style.opacity = "1";
         text.style.transform = "translateX(" + 70*document.documentElement.scrollTop/blockHeight + "px)";        
       }
       if (document.documentElement.scrollTop >= (window.innerHeight + 50)/1.7) {
         img.style.opacity = "0";
-        img.style.transform = "translateX(" +( -40 - 70*document.documentElement.scrollTop/blockHeight) + "px)";
+        img.style.transform = "translateX(-100px)";
       } else {
         img.style.opacity = "1";
         img.style.transform = "translateX(" +( - 70*document.documentElement.scrollTop/blockHeight) + "px)";

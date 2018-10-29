@@ -81,7 +81,7 @@ a#main_a {
         width: calc(100% - 20px);
     }
     div#general>div>div:last-of-type>h1 {
-        padding: 0 10%;
+        padding: 5px 10% 0;
         font-size: 1.9em;
     }
     div#general>div>div:last-of-type>h1>span {

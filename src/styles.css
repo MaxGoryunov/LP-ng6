@@ -28,6 +28,7 @@ a {
     background: #fff;
     overflow: hidden;
     z-index: 5;
+    display: none;
 }
 #tab1 {
     background: rgb(241, 43, 43);

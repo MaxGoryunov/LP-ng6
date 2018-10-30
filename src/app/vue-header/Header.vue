@@ -1,0 +1,173 @@
+<template>
+    <header class="large" id="Header">
+    <div class="info">
+        <div>
+            <figure>
+                <img src="assets/mail.png" alt="" >
+                <figcaption>maximthehedgehog@yandex.ru</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/phone.png" alt="" >
+                <figcaption>+7(921)872-37-29</figcaption>
+            </figure>
+        </div>
+    </div>
+  <section>
+    <span><div></div></span>
+    <div id="container">
+        <a class="active" id="a_main" href="#main_a">Основное</a>
+        <a id="a_skills" href="#skills_a">Навыки</a>
+        <a id="a_callback" href="#callback_a">Связь</a>
+    </div>
+  </section>
+</header>
+</template>
+
+<script>
+export default {
+    name: 'Header',
+    props: {
+        
+    }
+}
+</script>
+
+<style scoped>
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.5s ease-out;
+    background: rgb(223, 236, 242);
+    padding: 0 0 25px;
+    z-index: 5;
+}
+header>div.info {
+    background: rgb(223, 236, 242);
+    width: 100%;
+    height: 25px;
+    transition: 0.5s ease-out;
+    margin: 0 auto;
+    opacity: 1;
+}
+header>div:first-of-type>div {
+    float: right;
+    margin-right: 20px;
+    transition: 0.5s ease-out;
+}
+header>div:first-of-type>div>figure {
+    float: left;
+    padding: 0;
+    margin-top: 2.5px;
+}
+header>div:first-of-type>div>figure:first-child {
+    width: 300px;
+}
+header>div:first-of-type>div>figure:last-child {
+    width: 200px;
+}
+header>div:first-of-type>div>figure>img {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    padding-top: 2px; 
+}
+header>div:first-of-type>div>figure>figcaption {
+    color: rgb(2, 68, 126);
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+header>div:first-of-type>div>figure:hover>figcaption {
+    color: rgb(6, 142, 202);
+}
+header>section {
+    width: 100%;
+    background: #fff;
+    transition: 0.5s ease-out;
+    margin: 0 auto;
+}
+header>section>span {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    width: 200px;
+    height: 85px;
+    border-radius: 0 45px 45px 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s ease-out;
+}
+header>section>span>div {
+    background: rgb(2, 68, 126);
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+    display: block;
+    color: #fff;
+    float: right;
+    transition: 0.5s ease-out;
+}
+header>section>#container {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+}
+header>section>#container>a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    width: 125px;
+}
+header>section>#container>a.active {
+    color: rgb(6, 142, 202);
+    border-bottom: 3px solid rgb(6, 142, 202);
+}
+header>section>#container>a:hover {
+    color: rgb(6, 142, 202);
+    border-bottom: 3px solid rgb(6, 142, 202);
+}
+header.large {
+    padding: 0 0 25px;
+}
+header.small {
+    padding: 0;
+    top: -15px;
+    background: rgba(255, 255, 255, 0);
+}
+header.small>div.info {
+    width: 70%;
+    background: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
+header.small>section {
+    width: 70%;
+    box-shadow: 0 6px 12px rgb(2, 34, 59);
+    border-radius: 30px;
+}
+header.small>section>span {
+    height: 0px;
+    width: 0;
+    margin-left: 25%;
+    margin-top: 32.5px;
+    padding: 0;
+}
+header.small>section>span>div {
+    height: 0;
+}
+</style>
+
+
+
+

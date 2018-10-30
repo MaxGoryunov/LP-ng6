@@ -13,6 +13,44 @@ body {
 a {
     transition: 0.5s ease-out;
 }
+
+#tab1, #tab2, #tab3 {
+    border: 1px solid #777;
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    color: #fff;
+}
+#uncovered {
+    background: #fff;
+    overflow: hidden;
+    z-index: 5;
+}
+#tab1 {
+    background: rgb(241, 43, 43);
+}
+
+#tab2 {
+    left: 75px;
+    background: rgb(43, 165, 128);
+}
+
+#tab3 {
+    left: 125px;
+    background: rgb(71, 188, 235);
+}
+#tabContent1, #tabContent2, #tabContent3 {
+    margin-top: 33.6px;
+}
+#tabs .hide {
+    display: none;
+}
+#tabs .show  {
+    display: block;
+}
 @media screen and (max-width: 480px) {
     body {
         min-width: 360px;

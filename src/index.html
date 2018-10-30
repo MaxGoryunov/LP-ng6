@@ -9,6 +9,47 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <div id="tabs">
+    <div id="uncovered">
+      <button type="submit" id="tab1">Angular</button>
+      <button type="submit" id="tab2">Vue</button>
+      <button type="submit" id="tab3">React</button>
+    </div>
+    <app-root id="tabContent1"></app-root>
+    <div id="tabContent2"></div>
+    <div id="tabContent3"></div>
+  </div>
+  <script>
+    let tab1 = document.getElementById("tab1");
+    let tab2 = document.getElementById("tab2");
+    let tab3 = document.getElementById("tab3");
+    let tabContent1 = document.getElementById("tabContent1");
+    let tabContent2 = document.getElementById("tabContent2");
+    let tabContent3 = document.getElementById("tabContent3");
+    tab1.onclick = () => {
+      tabContent1.classList.add("show");
+      tabContent1.classList.remove("hide");
+      tabContent2.classList.add("hide");
+      tabContent3.classList.add("hide");
+      tabContent2.classList.remove("show");
+      tabContent3.classList.remove("show");
+    }
+    tab2.onclick = () => {
+      tabContent2.classList.add("show");
+      tabContent2.classList.remove("hide");
+      tabContent1.classList.add("hide");
+      tabContent3.classList.add("hide");
+      tabContent1.classList.remove("show");
+      tabContent3.classList.remove("show");
+    }
+    tab3.onclick = () => {
+      tabContent3.classList.add("show");
+      tabContent3.classList.remove("hide");
+      tabContent1.classList.add("hide");
+      tabContent2.classList.add("hide");
+      tabContent1.classList.remove("show");
+      tabContent2.classList.remove("show");
+    }
+  </script>
 </body>
 </html>
